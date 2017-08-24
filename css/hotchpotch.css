@@ -1,0 +1,119 @@
+.flexCenter{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.positionCenter{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: orangered;
+    text-align: center;
+    line-height: 100px;
+}
+.line-tri{
+    width: 150px;
+    height: 30px;
+    padding: 15px 0;
+    border-top: 30px solid;
+    border-bottom: 30px solid;
+    background-color: currentColor;
+    background-clip: content-box;
+}
+.eye{
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    border-radius: 50%;
+    border: 10px solid;
+    background-color: currentColor;
+    background-clip: content-box;
+}
+.tridown{
+    width: 0;
+    height: 0;
+    border-top:30px solid red;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+}
+.triup{
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid red;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+}
+.trileft{
+    width: 0;
+    height: 0;
+    border-right: 30px solid red;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+.triright{
+    width: 0;
+    height: 0;
+    border-left: 30px solid red;
+    border-top:30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 80%;
+}
+.semiCircle{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50px 50px 0 0;
+}
+.outer{
+    background-color: #655;
+    padding: 0.8em;
+    width: 200px;
+}
+.inner{
+    background-color: tan;
+    border-radius: 0.8em;
+    padding: 0.8em;
+}
+.justifyCicle{
+    border-radius: 50%;
+    background-color: red;
+}
+.parallelogram{
+    transform: skewX(-45deg);
+    background-color: red;
+}
+.parallelogram>div{
+    transform: skewX(45deg);
+}
+.parallelogramEx{
+    position: relative;
+}
+.parallelogramEx::after{
+    content: "";
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    right: 0;
+    z-index: -1;
+    transform: skew(-45deg);
+    background-color: red;
+}
+.diamand{
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    background: red;
+}
+.diamand>div{
+    transform: rotate(-45deg);
+}
