@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS百分比padding实现比例固定图片自适应布局</title>
+    <link rel="stylesheet" href="css/hotchpotch.css">
+</head>
+<body>
+    <p>注册|退出</p>
+    <p>注册<span class="splitCls">|</span>退出</p>
+    <p>注册<span class="splitCls1"></span>退出</p>
+    <div style="padding: 50%;background: red;position: relative;">
+        <div style="position: absolute;top:0;bottom: 0;left: 0;right: 0;">BipBox</div>
+    </div>
+    <div style="padding: 100% 0 0;background: green;position: relative;">
+        <div style="position: absolute;top:0;bottom: 0;left: 0;right: 0;">BipBox</div>
+    </div>
+    <div style="padding: 0 0 100%;background: yellow;position: relative;">
+        <div style="position: absolute;top:0;bottom: 0;left: 0;right: 0;">BipBox</div>
+    </div>
+    <div class="container">
+        <div class="example">
+            <h2>你的指尖</h2>
+            <h4>慕课网</h4>
+        </div>
+    </div>
+    <div>
+        <img src="image/head.jpg" style="float: left;"/>
+        <p>Hello,world!</p>
+        <p style="overflow: hidden;">Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!Hello,world!</p>
+    </div>
+    <div>
+        <img src="image/head.jpg" style="float: left;"/>
+        <div>利用视区宽度vw实现与宽度适应的正方形利用视区宽度vw实现与宽度适应的正方形利用视区宽度vw实现与宽度适应的正方形利用视区宽度vw实现与宽度适应的正方形</div>
+    </div>
+
+    <div>
+        <img src="image/head.jpg" style="float: left;"/>
+        <div style="clear: both;margin-bottom: 100px;">clearBoth</div>
+        <div style="margin-top: 100px;">本文本离图片的距离是？</div>
+    </div>
+    <div style="overflow: hidden;">
+        <img src="image/head.jpg" style="float: left;margin-bottom: 100px;">
+    </div>
+    <div style="margin-top: 100px;">本文本离图片的距离是？</div>
+    <div class="placeholder">利用视区宽度vw实现与宽度适应的正方形</div>
+    <div class="placeholder2">利用垂直方向的padding值与width的百分比相同利用垂直方向的padding值与width的百分比相同利用垂直方向的padding值与width的百分比相同利用垂直方向的padding值与width的百分比相同利用垂直方向的padding值与width的百分比相同</div>
+    <div class="placeholder3">利用垂直方向的padding值与width的百分比相同利用垂直方向的padding值与width的百分比相同利用垂直方向的padding值与width的百分比相同利用垂直方向的padding值与width的百分比相同利用垂直方向的padding值与width的百分比相同</div>
+
+    <div class="banner">
+        <img src="image/0.jpg">
+    </div>
+    <div style="text-align: center;">
+        <img src="image/head.jpg" style="width: 33%;height: auto;"/>
+    </div>
+    <div style="text-align: center;">
+        <img src="image/head.jpg" style="width: 33%;height: auto;margin: 0 auto"/>
+    </div>
+    <div style="display: table;width: 100%;">
+        <div style="display: table-cell;text-align: center;vertical-align: middle;">
+            <img src="image/head.jpg" style="width: 33%;height: auto;"/>
+        </div>
+    </div>
+    <div style="position: relative;width: 100%;min-height: 263px;">
+        <img src="image/head.jpg" style="position: absolute;width: 33%;height: auto;margin: auto;left: 0;right: 0;top:0;bottom: 0;">
+    </div>
+
+    <div style="position: relative;min-height: 263px;">
+        <img src="image/head.jpg" style="position: absolute;width: 33%;height: auto;top:50%;left: 50%;transform: translate(-50%,-50%)">
+    </div>
+    <div style="display: flex;justify-content: center;align-items: center;">
+        <img src="image/head.jpg" style="width: 33%;height: auto;"/>
+    </div>
+    <div>
+        <span>热卖</span>
+        <i class="hotpic"></i>
+    </div>
+    <img src="image/hottri.png">
+    
+
+</body>
+</html>
