@@ -36,7 +36,7 @@ ul,ol{
     right: 0;
 }
 .header{
-    height: 48px;
+    height: 1.2rem;
     padding:0 5px;
     background-color: #21292b;
     color: #fff;
@@ -44,25 +44,15 @@ ul,ol{
     z-index: 1;
 }
 .header>h1{
-    line-height: 48px;
+    line-height: 1.2rem;
     margin: 0 0 0 10px;
-    font-size: 18px;
     float: left;
-}
-.header>a{
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    -webkit-background-size:;
-    background-size:48px 144px;
-    text-indent: -9em;
-    overflow: hidden;
 }
 .header>.icon-search,.header>.icon-add{
     float: right;
 }
 .footer{
-    height: 52px;
+    height: 1rem;
     border-top: 1px solid #dfdfdf;
     background-color: #fcfcfc;
     bottom: 0;
@@ -73,20 +63,19 @@ ul,ol{
     text-align: center;
     color: #999;
     float: left;
-    font-size: 14px;
 }
 .footer>a>i{
     display: block;
-    height: 35px;
+    height: 0.5rem;
     margin-bottom: -3px;
-    background-size: 35px 280px;
+    background-size: 0.5rem 280px;
 }
 .footer>.active{
     color: #45c018;
 }
 .content{
-    top:48px;
-    bottom: 53px;
+    top: 1.2rem;
+    bottom: 1rem;
     overflow: auto;
 }
 .icon-search, .icon-back, .icon-add { background: url("../image/search.png") no-repeat; }

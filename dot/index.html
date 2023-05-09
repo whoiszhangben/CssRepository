@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dot{
+            display: inline-block;
+            height: 1em;
+            vertical-align: -.25em;
+            line-height: 1;
+            text-align: left;
+            /* overflow: hidden; */
+        }
+        dot::before {
+            display: block;
+            content: '...\A..\A.';
+            white-space: pre;
+            transform: translateY(-1em);
+            animation: dot 3s step-start infinite;
+        }
+        @keyframes dot {
+            33% {
+                transform: translateY(-2em);
+            }
+            66% {
+                transform: translateY(-1em);
+            }
+        }
+        a[href*='https'] {
+            background: #cd0000;
+            text-decoration: none;
+            padding: 50px;
+            font-size: 0;
+        }
+
+        a+a:before {
+            content: '';
+            font-size: 0;
+            padding: 10px 3px 1px;
+            margin-left: 6px;
+            border-left: 1px solid;
+        }
+        h3 {
+            line-height: 30px;
+            font-size: 14px;
+        }
+        #hash1 {
+           padding-top: 58px; 
+        }
+        h3 > span {
+            padding-top: 58px;
+        }
+        .icon-menu {
+            display: inline-block;
+            width: 100px;
+            height: 10px;
+            padding: 30px 0;
+            border-top: 10px solid;
+            border-bottom: 10px solid;
+            background-color: currentColor;
+            background-clip: content-box;
+        }
+        .icon-eye {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            padding: 20px;
+            border: 20px solid;
+            background-color: currentColor;
+            background-clip: content-box;
+        }
+        .icon-arrow {
+            display: inline-block;
+            width: 20px;
+            height: 1ex;
+            background: url(breack.png) no-repeat center;
+            background-color: #cd0000;
+        }
+        .test {
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div>正在加载中<dot>...</dot></div></div>
+    <div>白日依山尽，黄河入海流，欲穷千里目，更上一层楼</div>
+    <div>111111111111111111111111111111111111111111</div>
+    <div>
+        hello, world.
+        <a href="https://www.baidu.com">百度</a>
+        硒鼓1城西1厅顶需要需要发阿斯蒂芬棒棒有可能顶！d=====(￣▽￣*)城西有可能有可能大家土4需要3需求4硒鼓1城西1厅顶需要需要发阿斯蒂芬棒棒有可能顶！d=====(￣▽￣*)城西有可能有可能大家土4需要3需求4硒鼓1城西1厅顶需要需要发阿斯蒂芬棒棒有可能顶！d=====(￣▽￣*)城西有可能有可能大家土4需要3需求4硒鼓1城西1厅顶需要需要发阿斯蒂芬棒棒有可能顶！d=====(￣▽￣*)城西有可能有可能大家土4需要3需求4
+    </div>
+    <div>
+        <a>星朗1xyz</a><a>星朗2</a>
+    </div>
+    <h3 id="hash1">标题</h3>
+    ksdkfkdgklsjkgkfgksfgdksgfjkgdfkjf
+    <h3><span id="hash2">标题</span></h3>
+    ksdkfkdgklsjkgkfgksfgdksgfjkgdfkjf
+
+    <div class="icon-menu"></div>
+    <div class="icon-eye"></div>
+
+    <div class="test">kuailedabenz<i class="icon-arrow"></i></div>
+</body>
+</html>
